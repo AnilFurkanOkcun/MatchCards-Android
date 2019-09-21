@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Register -->
+	<integer name="nickname_max_char">15</integer>
+	<integer name="password_min_char">6</integer>
+	<integer name="password_max_char">15</integer>
+	<integer name="avatar_image_max_size">200</integer>
+	
+	<!-- Game -->
+	<integer name="game_time_ms">180000</integer><!-- 3 min -->
+	<integer name="flipped_cards_no_match_duration_time_ms">350</integer>
+	<integer name="flipped_cards_match_duration_time_ms">50</integer>
+	
+	<!-- Leaders -->
+	<integer name="leaders_count_limit">20</integer>
+
+</resources>

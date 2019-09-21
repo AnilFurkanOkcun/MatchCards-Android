@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		style="@style/Toolbar"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			tools:ignore="UseCompoundDrawables">
+			
+			<ImageView
+				android:id="@+id/imgToolbarBack"
+				style="@style/ImgToolbarIcon"
+				android:contentDescription="@string/content_description_back"
+				app:srcCompat="@drawable/ic_arrow_back_white_24dp" />
+			
+			<TextView
+				style="@style/TvToolbarText"
+				android:layout_marginStart="@dimen/spacing_16"
+				android:layout_marginEnd="@dimen/spacing_16"
+				android:text="@string/leaders_toolbar_title" />
+		</LinearLayout>
+	
+	</androidx.appcompat.widget.Toolbar>
+	
+	<View
+		android:id="@+id/viewFirstThreeLeadersArea"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="@color/white"
+		android:visibility="gone"
+		app:layout_constraintBottom_toBottomOf="@id/tvLeader1Score"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/toolbar" />
+	
+	<TextView
+		android:id="@+id/tvLeader2Order"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/spacing_24"
+		android:text="@string/_2"
+		android:textAppearance="@style/LeaderOrderTextAppearance"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="@id/imgLeader2Avatar"
+		app:layout_constraintStart_toStartOf="@id/imgLeader2Avatar"
+		app:layout_constraintTop_toBottomOf="@id/toolbar" />
+	
+	<com.makeramen.roundedimageview.RoundedImageView
+		android:id="@+id/imgLeader2Avatar"
+		style="@style/ImgAvatar"
+		android:layout_width="@dimen/leader_2_avatar_size"
+		android:layout_height="@dimen/leader_2_avatar_size"
+		android:layout_marginStart="@dimen/spacing_16"
+		android:layout_marginTop="@dimen/spacing_8"
+		android:visibility="gone"
+		app:layout_constraintEnd_toStartOf="@id/imgLeader1Avatar"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/tvLeader2Order" />
+	
+	<TextView
+		android:id="@+id/tvLeader2Nickname"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/spacing_8"
+		android:textAppearance="@style/LeaderNicknameTextAppearance"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="@id/imgLeader2Avatar"
+		app:layout_constraintStart_toStartOf="@id/imgLeader2Avatar"
+		app:layout_constraintTop_toBottomOf="@id/imgLeader2Avatar" />
+	
+	<TextView
+		android:id="@+id/tvLeader2Score"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/spacing_6"
+		android:textAppearance="@style/LeaderScoreTextAppearance"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="@id/imgLeader2Avatar"
+		app:layout_constraintStart_toStartOf="@id/imgLeader2Avatar"
+		app:layout_constraintTop_toBottomOf="@id/tvLeader2Nickname" />
+	
+	<TextView
+		android:id="@+id/tvLeader1Order"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/spacing_16"
+		android:text="@string/_1"
+		android:textAppearance="@style/LeaderOrderTextAppearance"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="@id/imgLeader1Avatar"
+		app:layout_constraintStart_toStartOf="@id/imgLeader1Avatar"
+		app:layout_constraintTop_toBottomOf="@id/toolbar" />
+	
+	<com.makeramen.roundedimageview.RoundedImageView
+		android:id="@+id/imgLeader1Avatar"
+		style="@style/ImgAvatar"
+		android:layout_width="@dimen/leader_1_avatar_size"
+		android:layout_height="@dimen/leader_1_avatar_size"
+		android:layout_marginStart="@dimen/spacing_16"
+		android:layout_marginTop="@dimen/spacing_8"
+		android:layout_marginEnd="@dimen/spacing_16"
+		android:visibility="gone"
+		app:layout_constraintEnd_toStartOf="@id/imgLeader3Avatar"
+		app:layout_constraintStart_toEndOf="@id/imgLeader2Avatar"
+		app:layout_constraintTop_toBottomOf="@id/tvLeader1Order" />
+	
+	<TextView
+		android:id="@+id/tvLeader1Nickname"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/spacing_8"
+		android:textAppearance="@style/LeaderNicknameTextAppearance"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="@id/imgLeader1Avatar"
+		app:layout_constraintStart_toStartOf="@id/imgLeader1Avatar"
+		app:layout_constraintTop_toBottomOf="@id/imgLeader1Avatar" />
+	
+	<TextView
+		android:id="@+id/tvLeader1Score"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/spacing_4"
+		android:paddingBottom="@dimen/spacing_12"
+		android:textAppearance="@style/LeaderScoreTextAppearance"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="@id/imgLeader1Avatar"
+		app:layout_constraintStart_toStartOf="@id/imgLeader1Avatar"
+		app:layout_constraintTop_toBottomOf="@id/tvLeader1Nickname" />
+	
+	<TextView
+		android:id="@+id/tvLeader3Order"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/spacing_32"
+		android:text="@string/_3"
+		android:textAppearance="@style/LeaderOrderTextAppearance"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="@id/imgLeader3Avatar"
+		app:layout_constraintStart_toStartOf="@id/imgLeader3Avatar"
+		app:layout_constraintTop_toBottomOf="@id/toolbar" />
+	
+	<com.makeramen.roundedimageview.RoundedImageView
+		android:id="@+id/imgLeader3Avatar"
+		style="@style/ImgAvatar"
+		android:layout_width="@dimen/leader_3_avatar_size"
+		android:layout_height="@dimen/leader_3_avatar_size"
+		android:layout_marginTop="@dimen/spacing_8"
+		android:layout_marginEnd="@dimen/spacing_16"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/imgLeader1Avatar"
+		app:layout_constraintTop_toBottomOf="@id/tvLeader3Order" />
+	
+	<TextView
+		android:id="@+id/tvLeader3Nickname"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/spacing_8"
+		android:textAppearance="@style/LeaderNicknameTextAppearance"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="@id/imgLeader3Avatar"
+		app:layout_constraintStart_toStartOf="@id/imgLeader3Avatar"
+		app:layout_constraintTop_toBottomOf="@id/imgLeader3Avatar" />
+	
+	<TextView
+		android:id="@+id/tvLeader3Score"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/spacing_6"
+		android:textAppearance="@style/LeaderScoreTextAppearance"
+		android:visibility="gone"
+		app:layout_constraintEnd_toEndOf="@id/imgLeader3Avatar"
+		app:layout_constraintStart_toStartOf="@id/imgLeader3Avatar"
+		app:layout_constraintTop_toBottomOf="@id/tvLeader3Nickname" />
+	
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/rvLeaders"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginTop="@dimen/spacing_1"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/viewFirstThreeLeadersArea" />
+	
+	<ProgressBar
+		android:id="@+id/progressBar"
+		style="@style/BlueProgressBarStyle"
+		android:layout_width="@dimen/big_progressbar_size"
+		android:layout_height="@dimen/big_progressbar_size"
+		android:layout_gravity="center"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

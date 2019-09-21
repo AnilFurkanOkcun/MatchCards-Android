@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		style="@style/Toolbar">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			tools:ignore="UseCompoundDrawables">
+			
+			<ImageView
+				android:id="@+id/imgToolbarBack"
+				style="@style/ImgToolbarIcon"
+				android:contentDescription="@string/content_description_back"
+				app:srcCompat="@drawable/ic_arrow_back_white_24dp" />
+			
+			<TextView
+				style="@style/TvToolbarText"
+				android:layout_marginStart="@dimen/spacing_16"
+				android:layout_marginEnd="@dimen/spacing_16"
+				android:text="@string/register_toolbar_title" />
+		</LinearLayout>
+	
+	</androidx.appcompat.widget.Toolbar>
+	
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="?attr/actionBarSize">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingStart="@dimen/spacing_24"
+			android:paddingEnd="@dimen/spacing_24"
+			android:paddingBottom="@dimen/spacing_90">
+			
+			<FrameLayout
+				android:id="@+id/frameAvatar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="@dimen/spacing_24">
+				
+				<com.makeramen.roundedimageview.RoundedImageView
+					android:id="@+id/imgAvatar"
+					style="@style/ImgAvatar"
+					android:layout_width="@dimen/register_img_avatar_size"
+					android:layout_height="@dimen/register_img_avatar_size"
+					android:layout_gravity="top|start"
+					android:layout_marginBottom="@dimen/spacing_12" />
+				
+				<ImageView
+					android:layout_width="@dimen/register_ic_edit_avatar_size"
+					android:layout_height="@dimen/register_ic_edit_avatar_size"
+					android:layout_gravity="bottom|end"
+					android:background="@drawable/shape_round_blue700"
+					android:contentDescription="@string/content_description_change_avatar"
+					android:padding="@dimen/spacing_12"
+					app:srcCompat="@drawable/ic_edit_pen_white_14dp" />
+			
+			</FrameLayout>
+			
+			<EditText
+				android:id="@+id/etNickname"
+				style="@style/EtNickname"
+				android:layout_marginTop="@dimen/spacing_16"
+				tools:ignore="Autofill,LabelFor" />
+			
+			<EditText
+				android:id="@+id/etPassword"
+				style="@style/EtPassword"
+				android:layout_marginTop="@dimen/spacing_16"
+				tools:ignore="Autofill,LabelFor" />
+			
+			<EditText
+				android:id="@+id/etPassword2"
+				style="@style/EtPassword"
+				android:layout_marginTop="@dimen/spacing_16"
+				tools:ignore="Autofill,LabelFor" />
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/spacing_6"
+				android:text="@string/password_info"
+				android:textColor="@color/grey700" />
+		</LinearLayout>
+	</ScrollView>
+	
+	<Button
+		android:id="@+id/btnSignup"
+		style="@style/BtnDefault"
+		android:layout_gravity="bottom"
+		android:layout_marginStart="@dimen/spacing_24"
+		android:layout_marginEnd="@dimen/spacing_24"
+		android:layout_marginBottom="@dimen/spacing_16"
+		android:enabled="false"
+		android:text="@string/btn_signup" />
+</FrameLayout>

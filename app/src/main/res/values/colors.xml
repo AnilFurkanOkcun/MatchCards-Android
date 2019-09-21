@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#1976D2</color>
+	<color name="colorPrimaryDark">#004BA0</color>
+	<color name="colorAccent">#29B6F6</color>
+	
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	
+	<color name="primaryTextColor">#ffffff</color>
+	<color name="colorImagePlaceHolder">#EEEEEE</color>
+	
+	<!-- Material Grey Colors -->
+	<color name="grey300">#E0E0E0</color>
+	<color name="grey500">#9E9E9E</color>
+	<color name="grey700">#616161</color>
+	<color name="grey900">#212121</color>
+	
+	<!-- Material Blue Colors -->
+	<color name="blue400">#42A5F5</color>
+	<color name="blue500">#2196F3</color>
+	<color name="blue700">#1976D2</color>
+	<color name="blue800">#1565C0</color>
+	<color name="blue900">#0D47A1</color>
+	
+	<!-- Material Red Colors -->
+	<color name="red400">#ef5350</color>
+	<color name="red500">#F44336</color>
+	<color name="red700">#D32F2F</color>
+	<color name="red800">#C62828</color>
+	
+	<!-- Material Green Colors -->
+	<color name="green400">#66BB6A</color>
+	<color name="green800">#2E7D32</color>
+</resources>

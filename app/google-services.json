@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "498417914025",
+    "firebase_url": "https://match-cards.firebaseio.com",
+    "project_id": "match-cards",
+    "storage_bucket": "match-cards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498417914025:android:9c19560cc89543f5",
+        "android_client_info": {
+          "package_name": "com.anilokcun.matchcards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498417914025-f1tukbpjhstll40m72i3em7kj1frnadg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmc9sha48nBhp9u9BT1UWPhARc_5oBt3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498417914025-f1tukbpjhstll40m72i3em7kj1frnadg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

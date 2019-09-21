@@ -1,0 +1,65 @@
+<resources>
+	<!-- General -->
+	<string name="app_name">Kartları Eşleştir!</string>
+	<string name="settings">Ayarlar</string>
+	
+	<string name="toast_error_image_select">Görsel seçilemedi.</string>
+	<string name="an_error_occurred">Bir hata oluştu. Lütfen internet bağlantınızı kontrol edip tekrar deneyiniz.
+    </string>
+	
+	<!-- Onboard -->
+	<string name="nickname_hint">Takma ad</string>
+	<string name="password_hint">Şifre</string>
+	<string name="password_info">Şifreniz en az 6 karakter olmalıdır.</string>
+	
+	<!-- Login -->
+	<string name="login_toolbar_title">Giriş</string>
+	<string name="btn_login">Giriş yap</string>
+	<string name="login_bottom_signup_text">Hesabınız yok mu? Kayıt olun</string>
+	<string name="progress_logging_in">Giriş yapılıyor…</string>
+	
+	<!-- Register -->
+	<string name="register_toolbar_title">Kayıt Ol</string>
+	<string name="btn_signup">Kayıt Ol</string>
+	<string name="progress_signing_up">Kayıt olunuyor…</string>
+	
+	<!-- Home -->
+	<string name="home_user_scores">Son Skor: %1$d &#160;&#160;&#160; En Yüksek Skor: %2$d</string>
+	<string name="btn_play">Oyna</string>
+	<string name="btn_leaders">Liderler</string>
+	
+	<!-- Game -->
+	<string name="game_time">Süre: %1$02d:%2$02d</string>
+	<string name="game_score">Skor: %1$d</string>
+	<string name="game_dialog_title_level_completed">%1$d.Seviye Tamamlandı!</string>
+	<string name="game_dialog_title_congrats">Tebrikler!</string>
+	<string name="game_dialog_title_game_over">Oyun Bitti!</string>
+	<string name="game_dialog_info_remaining_time">Kalan Süre: %1$02d:%2$02d</string>
+	<string name="game_dialog_info_your_last_high_score">Son En Yüksek Skorun: %1$d</string>
+	<string name="game_dialog_btn_next_level">Sonraki Seviye</string>
+	<string name="game_dialog_btn_play_again">Tekrar Oyna</string>
+	<string name="game_dialog_btn_share_your_score">Skorunu Paylaş</string>
+	<string name="score_sharing_text">Bak, %2$s oyununda %1$d puan yaptım, bunu geçebilir misin? Denesene: %3$s</string>
+	<string name="toast_your_score_has_been_saved">Skorunuz kayıt edildi.</string>
+	<string name="toast_your_score_couldnt_save">Skorunuz kayıt edilemedi.</string>
+	
+	<!-- Leaders -->
+	<string name="leaders_toolbar_title">Liderler</string>
+	
+	<!-- Permissions -->
+	<string name="snackbar_msg_gallery_permission_denied">İzin vermeden galeriyi açamazsınız.</string>
+	<string name="snackbar_msg_gallery_permission_denied_permanently">Galeriyi açmak için izin vermelisiniz.</string>
+	
+	<!-- Digits -->
+	<string name="digits_text_number">ABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefgğhıijklmnoöpqrsştuüvwxyz0123456789
+    </string>
+	<string name="digits_text_number_special">
+        ABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefgğhıijklmnoöpqrsştuüvwxyz0123456789!"#$%&amp;'()*+,-./:;=&#60;>?@[\]^_`{|}~
+    </string>
+	
+	<!-- Content Description -->
+	<string name="content_description_back">Geri</string>
+	<string name="content_description_change_avatar">Avatar\'ını değiştir</string>
+	<string name="content_description_log_out">Çıkış yap</string>
+
+</resources>

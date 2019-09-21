@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Font Sizes-->
+	<dimen name="font_25">25sp</dimen>
+	<dimen name="font_20">20sp</dimen>
+	<dimen name="font_18">18sp</dimen>
+	<dimen name="font_17">17sp</dimen>
+	<dimen name="font_16">16sp</dimen>
+	<dimen name="font_15">15sp</dimen>
+	<dimen name="font_14">14sp</dimen>
+	
+	<!-- Spacing -->
+	<dimen name="spacing_90">90dp</dimen>
+	<dimen name="spacing_60">60dp</dimen>
+	<dimen name="spacing_32">32dp</dimen>
+	<dimen name="spacing_24">24dp</dimen>
+	<dimen name="spacing_16">16dp</dimen>
+	<dimen name="spacing_12">12dp</dimen>
+	<dimen name="spacing_8">8dp</dimen>
+	<dimen name="spacing_6">6dp</dimen>
+	<dimen name="spacing_4">4dp</dimen>
+	<dimen name="spacing_1">1dp</dimen>
+	
+	<!-- Sizes -->
+	<dimen name="btn_default_stroke">1dp</dimen>
+	<dimen name="btn_default_radius">12dp</dimen>
+	<dimen name="et_default_stroke">2dp</dimen>
+	<dimen name="et_default_radius">8dp</dimen>
+	<dimen name="avatar_stroke">1dp</dimen>
+	<dimen name="dialog_min_width">275dp</dimen>
+	<dimen name="progressbar_size">48dp</dimen>
+	<dimen name="big_progressbar_size">80dp</dimen>
+	
+	<!--register-->
+	<dimen name="register_img_avatar_size">100dp</dimen>
+	<dimen name="register_ic_edit_avatar_size">44dp</dimen>
+	<dimen name="select_avatar_dialog_avatar_size">85dp</dimen>
+	
+	<!--home-->
+	<dimen name="home_img_avatar_size">120dp</dimen>
+	<dimen name="home_ic_logout_size">40dp</dimen>
+	
+	<!--game-->
+	<dimen name="game_card_stroke">2dp</dimen>
+	<dimen name="game_card_radius">6dp</dimen>
+	<dimen name="game_cards_large_spacing">16dp</dimen>
+	<dimen name="game_cards_small_spacing">10dp</dimen>
+	<dimen name="game_dialog_btn_height">40dp</dimen>
+	
+	<!--leaders-->
+	<dimen name="leader_1_avatar_size">105dp</dimen>
+	<dimen name="leader_2_avatar_size">90dp</dimen>
+	<dimen name="leader_3_avatar_size">75dp</dimen>
+	<dimen name="leader_avatar_size">60dp</dimen>
+</resources>

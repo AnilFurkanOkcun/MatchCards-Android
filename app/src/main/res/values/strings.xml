@@ -1,0 +1,66 @@
+<resources>
+	<!-- General -->
+	<string name="app_name">Match Cards!</string>
+	<string name="app_url" translatable="false">https://play.google.com/store</string>
+	<string name="settings">Settings</string>
+	
+	<string name="toast_error_image_select">Image could not be selected.</string>
+	<string name="an_error_occurred">Something went wrong. Please check your internet connection and try again.</string>
+	
+	<!-- Onboard -->
+	<string name="nickname_hint">Nickname</string>
+	<string name="password_hint">Password</string>
+	<string name="password_info">Your password should be at least 6 characters.</string>
+	
+	<!-- Login -->
+	<string name="login_toolbar_title">Log In</string>
+	<string name="btn_login">Log in</string>
+	<string name="login_bottom_signup_text">Don\’t have an account? Sign Up</string>
+	<string name="progress_logging_in">Logging in…</string>
+	
+	<!-- Register -->
+	<string name="register_toolbar_title">Register</string>
+	<string name="btn_signup">Sign up</string>
+	<string name="progress_signing_up">Signing up…</string>
+	
+	<!-- Home -->
+	<string name="home_user_scores">Last Score: %1$d &#160;&#160;&#160; High Score: %2$d</string>
+	<string name="btn_play">Play</string>
+	<string name="btn_leaders">Leaders</string>
+	
+	<!-- Game -->
+	<string name="game_time">Time: %1$02d:%2$02d</string>
+	<string name="game_score">Score: %1$d</string>
+	<string name="game_dialog_title_level_completed">Level %1$d Completed!</string>
+	<string name="game_dialog_title_congrats">Congrats!</string>
+	<string name="game_dialog_title_game_over">Game Over!</string>
+	<string name="game_dialog_info_remaining_time">Remaining Time: %1$02d:%2$02d</string>
+	<string name="game_dialog_info_your_last_high_score">Your Last High Score: %1$d</string>
+	<string name="game_dialog_btn_next_level">Next Level</string>
+	<string name="game_dialog_btn_play_again">Play Again</string>
+	<string name="game_dialog_btn_share_your_score">Share Your Score</string>
+	<string name="score_sharing_text">Look, I got %1$d points on %2$s game, can you beat this? Try it: %3$s</string>
+	<string name="toast_your_score_has_been_saved">Your score has been saved.</string>
+	<string name="toast_your_score_couldnt_save">Your score could not be saved.</string>
+	
+	<!-- Leaders -->
+	<string name="leaders_toolbar_title">Leaders</string>
+	<string name="_1" translatable="false">1</string>
+	<string name="_2" translatable="false">2</string>
+	<string name="_3" translatable="false">3</string>
+	
+	<!-- Permissions -->
+	<string name="snackbar_msg_gallery_permission_denied">You can\'t open the gallery without permission.</string>
+	<string name="snackbar_msg_gallery_permission_denied_permanently">You need the give permission to open gallery.
+    </string>
+	
+	<!-- Digits -->
+	<string name="digits_text_number">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</string>
+	<string name="digits_text_number_special">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&amp;'()*+,-./:;=&#60;>?@[\]^_`{|}~</string>
+	
+	<!-- Content Description -->
+	<string name="content_description_back">back</string>
+	<string name="content_description_change_avatar">change your avatar</string>
+	<string name="content_description_log_out">log out</string>
+
+</resources>

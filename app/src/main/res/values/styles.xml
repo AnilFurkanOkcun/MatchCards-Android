@@ -1,0 +1,153 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+	
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:windowBackground">@color/grey300</item>
+	</style>
+	
+	<style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowBackground">@drawable/layerlist_bg_splash_en</item>
+	</style>
+	
+	<style name="AccentBlue700Theme" parent="AppTheme">
+		<item name="colorAccent">@color/blue700</item>
+	</style>
+	
+	<!-- TextView -->
+	<style name="TvToolbarText">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:gravity">center</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:fontFamily">@font/roboto_medium</item>
+		<item name="android:textSize">@dimen/font_20</item>
+		<item name="android:textColor">@color/primaryTextColor</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+	
+	<style name="TvDialogText">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/black</item>
+		<item name="android:textSize">@dimen/font_15</item>
+		<item name="android:layout_gravity">center_horizontal</item>
+		<item name="android:layout_marginStart">@dimen/spacing_16</item>
+		<item name="android:layout_marginEnd">@dimen/spacing_16</item>
+	</style>
+	
+	<style name="TvGameDialogInfo">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/primaryTextColor</item>
+		<item name="android:textSize">@dimen/font_18</item>
+		<item name="android:gravity">center</item>
+		<item name="android:padding">@dimen/spacing_8</item>
+		<item name="android:fontFamily">@font/roboto_medium</item>
+	</style>
+	
+	<!-- EditText -->
+	<style name="EtDefault">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:background">@drawable/shape_bg_default_edittext</item>
+		<item name="android:padding">@dimen/spacing_8</item>
+	</style>
+	
+	<style name="EtNickname" parent="EtDefault">
+		<item tools:targetApi="o" name="android:autofillHints">@string/nickname_hint</item>
+		<item name="android:inputType">text</item>
+		<item name="android:hint">@string/nickname_hint</item>
+		<item name="android:digits">@string/digits_text_number</item>
+	</style>
+	
+	<style name="EtPassword" parent="EtDefault">
+		<item tools:targetApi="o" name="android:autofillHints">@string/password_hint</item>
+		<item name="android:inputType">textPassword</item>
+		<item name="android:hint">@string/password_hint</item>
+		<item name="android:digits">@string/digits_text_number_special</item>
+	</style>
+	
+	<!-- Button -->
+	<style name="BtnDefault">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:background">@drawable/selector_bg_default_button</item>
+		<item name="android:textColor">@color/primaryTextColor</item>
+		<item name="android:textSize">@dimen/font_15</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<!-- ImageView -->
+	<style name="ImgToolbarIcon">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:adjustViewBounds">true</item>
+		<item name="android:padding">@dimen/spacing_16</item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+	</style>
+	
+	<style name="ImgAvatar">
+		<item name="android:src">@color/white</item>
+		<item name="riv_oval">true</item>
+		<item name="riv_border_width">@dimen/avatar_stroke</item>
+		<item name="riv_border_color">@color/blue700</item>
+	</style>
+	
+	<!-- Layout Styles -->
+	<style name="LytRelativeDialogRoot">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center_horizontal</item>
+	</style>
+	
+	<style name="LytDialogRoot">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minWidth">@dimen/dialog_min_width</item>
+		<item name="android:background">@drawable/shape_bg_dialog</item>
+	</style>
+	
+	<!-- Progressbar Styles-->
+	<style name="BlueProgressBarStyle" parent="Base.Widget.AppCompat.ProgressBar">
+		<item name="android:layout_width">@dimen/progressbar_size</item>
+		<item name="android:layout_height">@dimen/progressbar_size</item>
+		<item name="android:theme">@style/AccentBlue700Theme</item>
+	</style>
+	
+	<!-- Toolbar -->
+	<style name="Toolbar">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">?attr/actionBarSize</item>
+		<item name="android:background">@color/colorPrimary</item>
+		<item tools:targetApi="lollipop" name="android:elevation">5dp</item>
+		<item name="contentInsetStart">0dp</item>
+	</style>
+	
+	<!-- TextAppearance-->
+	<style name="LeaderOrderTextAppearance" parent="@android:style/TextAppearance">
+		<item name="android:textSize">@dimen/font_18</item>
+		<item name="android:textColor">@color/grey500</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<style name="LeaderNicknameTextAppearance" parent="@android:style/TextAppearance">
+		<item name="android:textSize">@dimen/font_16</item>
+		<item name="android:textColor">@color/grey900</item>
+		<item name="android:fontFamily">@font/roboto_medium</item>
+	</style>
+	
+	<style name="LeaderScoreTextAppearance" parent="@android:style/TextAppearance">
+		<item name="android:textSize">@dimen/font_16</item>
+		<item name="android:textColor">@color/grey700</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+</resources>

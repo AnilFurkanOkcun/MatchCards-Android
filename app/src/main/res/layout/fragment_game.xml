@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		style="@style/Toolbar">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:paddingStart="@dimen/spacing_16"
+			android:paddingEnd="@dimen/spacing_16">
+			
+			<TextView
+				android:id="@+id/tvTime"
+				style="@style/TvToolbarText"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:gravity="start|center_vertical" />
+			
+			<TextView
+				android:id="@+id/tvScore"
+				style="@style/TvToolbarText"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:gravity="end|center_vertical"
+				android:layout_marginStart="@dimen/spacing_16"
+				android:layout_marginEnd="@dimen/spacing_16" />
+		</LinearLayout>
+	
+	</androidx.appcompat.widget.Toolbar>
+	
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/rvCards"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="?attr/actionBarSize"
+		android:overScrollMode="never" />
+
+</FrameLayout>

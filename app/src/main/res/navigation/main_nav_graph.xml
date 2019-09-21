@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	app:startDestination="@id/homeFragment">
+	
+	<fragment
+		android:id="@+id/homeFragment"
+		android:name="com.anilokcun.matchcards.ui.main.fragment.HomeFragment"
+		android:label="HomeFragment">
+		<action
+			android:id="@+id/action_homeFragment_to_gameFragment"
+			app:destination="@id/gameFragment" />
+		<action
+			android:id="@+id/action_homeFragment_to_leadersFragment"
+			app:destination="@id/leadersFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/gameFragment"
+		android:name="com.anilokcun.matchcards.ui.main.fragment.GameFragment"
+		android:label="GameFragment" />
+	<fragment
+		android:id="@+id/leadersFragment"
+		android:name="com.anilokcun.matchcards.ui.main.fragment.LeadersFragment"
+		android:label="LeadersFragment" />
+</navigation>

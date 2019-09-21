@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- Pressed -->
+	<item android:state_pressed="true">
+		<shape android:shape="rectangle">
+			<corners android:radius="@dimen/btn_default_radius" />
+			<solid android:color="@color/blue700" />
+			<stroke android:width="@dimen/btn_default_stroke" android:color="@color/white" />
+		</shape>
+	</item>
+	<!-- Enabled -->
+	<item android:state_enabled="true">
+		<shape android:shape="rectangle">
+			<corners android:radius="@dimen/btn_default_radius" />
+			<gradient android:angle="45" android:centerColor="@color/blue500" android:centerX="35%" android:endColor="@color/blue700" android:startColor="@color/blue700" android:type="linear" />
+			<stroke android:width="@dimen/btn_default_stroke" android:color="@color/white" />
+		</shape>
+	</item>
+	<!-- Default -->
+	<item android:state_enabled="false">
+		<shape android:shape="rectangle">
+			<corners android:radius="@dimen/btn_default_radius" />
+			<solid android:color="@color/grey500" />
+			<stroke android:width="@dimen/btn_default_stroke" android:color="@color/white" />
+		</shape>
+	</item>
+</selector>

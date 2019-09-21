@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item android:drawable="@color/grey300" />
+	<item>
+		<!-- I can't use vector drawables in theme on older APIs(ex:19).
+		If I use drawable:vector, Samsung Galaxy S3 doesn't show the splash screen.-->
+		<bitmap
+			android:gravity="center"
+			android:src="@drawable/splash_logo_en" />
+	</item>
+
+</layer-list>
